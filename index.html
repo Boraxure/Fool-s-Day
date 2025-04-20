@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>宫崎骏动漫</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function changeImage(img, src) {
+      img.src = src;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 鼠标经过图像 -->
+    <div class="banner">
+      <img 
+        src="image/baner.jpg" 
+        alt="宫崎骏动漫" 
+        width="600"
+        height="200"
+        style="object-fit: fill;"
+        onmouseover="changeImage(this, 'image/QQ图片20250420191249.jpg')" 
+        onmouseout="changeImage(this, 'image/u=933770477,3691714456&fm=253&fmt=auto&app=138&f=JPEG.jpg')" 
+      />
+    </div>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="totoro.html">龙猫</a>
+        <a href="spirited.html">千与千寻</a>
+        <a href="howl.html">哈尔的移动城堡</a>
+        <a href="ghibli.html">吉卜力工作室</a>
+    </div>
+
+    <div class="nav">
+        <img src="image/QQ图片20250420175645.jpg" alt="龙猫" width="100" height="100">
+        <img src="image/QQ图片20250420181035.jpg" alt="千与千寻" width="100" height="100"> 
+        <img src="image/u=41.jpg" alt="哈尔的移动城堡" width="100" height="100"> 
+        <img src="image/115125bbokboj1afvd111a.jpg" alt="吉卜力工作室" width="100" height="100"> 
+    </div>
+
+
+
+
+
+    <!-- 正文内容 -->
+    <div class="content">
+      <p>
+        宫崎骏，日本著名动画导演、编剧、制作人和漫画家，是吉卜力工作室的创始人之一。
+        他的作品以细腻的情感、奇幻的世界观和对自然与和平的关注而广受欢迎，
+        如《龙猫》、《千与千寻》、《哈尔的移动城堡》等，均为世界级经典之作。
+      </p>
+    </div>
+
+    <!-- 日期、邮箱、音频 -->
+    <div class="footer">
+      <p id="datetime"></p>
+      <p>联系我们：<a href="mailto:241810027@stu.nju.edu.cn">241810027@smail.nju.edu.cn</a></p>
+      <audio controls autoplay loop>
+        <source src="久石譲 - 空中散歩.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+      </audio>
+    </div>
+
+  </div>
+
+  
+
+  <!-- 显示日期时间 -->
+  <script>
+    document.getElementById("datetime").innerHTML = "当前时间：" + new Date().toLocaleString();
+  </script>
+</body>
+</html>
